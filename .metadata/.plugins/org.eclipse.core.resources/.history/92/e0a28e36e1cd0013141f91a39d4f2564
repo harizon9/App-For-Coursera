@@ -1,0 +1,17 @@
+var layout = require('ui/common/layout');
+var common = require('tools/common/commonTools');
+
+function processButA(){
+	common.navHandler({TYPE: 'HOME'});
+}
+
+function loadMenuBar(inParam){
+	
+	var menuBarWin = Ti.UI.createView({ height: layout.params.menu.height, width: layout.params.menu.width, bottom:0 });
+	var menuButtonA = Ti.UI.createButton({left:0, width:'25%', top:0, bottom:0, backgroundImage:'/assets/images/buttons/buttonA.png' });
+	menuBarWin.add(menuButtonA);
+	menuButtonA.addEventListener('click', processButA);
+	return menuBarWin;
+}
+
+exports.loadMenuBar = loadMenuBar;

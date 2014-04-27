@@ -1,0 +1,59 @@
+var openWin = null;
+var prevWin = null;
+var backArray = [];
+
+function loadError(inParam){
+	
+}
+
+function loadMainMenu(inParam){
+	
+}
+
+function loadRegisterTask(inParam){
+	
+}
+
+function loadInputTimeAvailable(inParam){
+	
+}
+
+function loadAvailableTaskawa(inParam){
+	
+}
+
+function navigateApplication(inParam){
+	switch(inParam.WINDOWTYPE){
+		case 'ERROR':
+			loadError(inParam);
+			break;
+		case 'MAIN_MENU':
+			loadMainMenu(inParam);
+			break;
+		case 'REGISTER_TASK':
+			loadRegisterTask(inParam);
+			break;
+		case 'INPUT_TIME_AVAILABLE':
+			loadInputTimeAvailable(inParam);
+			break;
+		case 'AVAILABLE_TASKS':
+			loadAvailableTaskawa(inParam);
+			break;
+		default:
+			break;
+	}
+}
+
+function addNavigateAppListener(){
+	
+}
+
+function removeNavigateAppListener(){
+	
+}
+
+function startApplication(){
+	addNavigateAppListener();
+}
+
+exports.startApplication = startApplication;

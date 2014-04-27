@@ -1,0 +1,50 @@
+var layout = require('ui/common/layout');
+var common = require('tools/common/commonTools');
+var windowNames = require('control/windowNames');
+
+function processButtonRegisterTask(controlButton){
+	
+	switch(controlButton.myValueID){
+		case 1:
+			common.navHandler({TYPE: windowNames.REGISTERTASK});
+			break;
+		case 2:
+			common.navHandler({TYPE: windowNames.AVAILABLETASKS});
+			break;
+		case 3:
+			common.navHandler({TYPE: windowNames.GETTASK});
+			break;
+		default:
+			break;
+	}
+	
+	
+}
+
+function loadMenuBar(inParam){
+	
+	var menuBarWin = Ti.UI.createView({ height: layout.params.menu.height, width: layout.params.menu.width, bottom:0, backgroundColor:'white', layout:'horizontal' });
+	
+	// ----- Button Register Task Menu button
+	var menuButtonRegisterTask = Ti.UI.createButton({title:'Add', left:0, width:'25%', top:0, bottom:0, myValueID:1});
+	menuBarWin.add(menuButtonRegisterTask);
+	menuButtonRegisterTask.addEventListener('click', function(e){
+														processButtonRegisterTask(menuButtonRegisterTask);});
+	
+	
+	// ----- Button Show Tasks Menu button
+	var menuButtonShowTasks = Ti.UI.createButton({title:'Show', left:0, width:'25%', top:0, bottom:0, myValueID:2});
+	menuBarWin.add(menuButtonShowTasks);
+	menuButtonRegisterTask.addEventListener('click', function(e){ 
+														processButtonRegisterTask(menuButtonRegisterTask);});
+	
+	// ----- Button Get Task Menu Button
+	var menuButtonGetTask = Ti.UI.createButton({title:'Show', left:0, width:'25%', top:0, bottom:0, myValueID:3});
+	menuBarWin.add(menuButtonGetTask);
+	menuButtonGetTask.addEventListener('click', function(e){
+													processButtonRegisterTask(menuButtonGetTask);});
+	
+	return menuBarWin;
+}
+
+exports.loadMenuBar = loadMenuBar;

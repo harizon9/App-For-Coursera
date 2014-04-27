@@ -1,0 +1,95 @@
+var common = require('/tools/common/commonTools');
+
+var openWin = null;
+var prevWin = null;
+var backArray = [];
+
+function processBackButton(inParam){
+	var iPos = ((backArray.length-2) < 0) ? 0 : (backArray.length-2);
+	
+	if(iPos >= 0){
+		var tmpParams = backArray[iPos];
+		
+		if(backArray.length>1) {
+			backArray.pop();
+			common.navHandler(tmpParams);
+		}
+	}	
+}
+
+function windowHandler(inParam){
+	backArray.push(inParam.PARAMS);
+	
+	prevWin = openWin;
+	
+	openWin = inParam.WIN;
+	
+	openWin.open();
+	
+	if(prevWin){
+		preWin.close();
+		prevWin = null;
+	}
+}
+
+function loadErrorW(inParam){
+	var loadErrorObject = require('ui/windows/errorWindow');
+	var loadErrorWindow = loadErrorObject.loadError();
+}
+
+function loadMainMenuW(inParam){
+	var loadMainMenuObject = require('ui/windows/errorWindow');
+	var loadMainMenuWindow = loadErrorObject.loadMainMenu();
+}
+
+function loadRegisterTaskW(inParam){
+	var loadRegisterTaskObject = require('ui/windows/errorWindow');
+	var loadRegisterTaskWindow = loadErrorObject.loadRegisterTask();
+}
+
+function loadInputTimeAvailableW(inParam){
+	var loadInputTimeAvailableObject = require('ui/windows/errorWindow');
+	var loadInputTimeAvailableWindow = loadErrorObject.loadInputTimeAvailable();
+}
+
+function loadAvailableTasksW(inParam){
+	var loadAvailableTasksObject = require('ui/windows/errorWindow');
+	var loadAvailableTasksWindow = loadErrorObject.loadAvailableTasks();
+}
+
+function navigateApplication(inParam){
+	switch(inParam.TYPE){
+		case 'ERROR':
+			loadError(inParam);
+			break;
+		case 'MAIN_MENU':
+			loadMainMenu(inParam);
+			break;
+		case 'REGISTER_TASK':
+			loadRegisterTask(inParam);
+			break;
+		case 'INPUT_TIME_AVAILABLE':
+			loadInputTimeAvailable(inParam);
+			break;
+		case 'AVAILABLE_TASKS':
+			loadAvailableTasks(inParam);
+			break;
+		default:
+			break;
+	}
+}
+
+function addNavigateAppListener(){
+	Ti.App.addEventListener('APPNAV', navigateApplication);
+}
+
+function removeNavigateAppListener(){
+	Ti.App.removeEventListener('APPNAV', navigateApplication);
+}
+
+function startApplication(){
+	addNavigateAppListener();
+	common.navHandler({TYPE:'MAIN_MENU'});
+}
+
+exports.startApplication = startApplication;

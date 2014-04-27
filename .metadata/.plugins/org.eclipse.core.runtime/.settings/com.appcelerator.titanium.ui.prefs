@@ -1,0 +1,12 @@
+=run
+Android\ Emulator\ Process\:ConsoleLogLevel=Info
+Get\ Task\:launchMode=run
+Get\ Task\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
+LAST_LAUNCH_TIMESTAMP=1398506943760
+bestpch31\:launchMode=run
+bestpch31\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (3.5 inch)
+bestpch41\:launchMode=run
+bestpch41\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (3.5 inch)
+eclipse.preferences.version=1
+preference.show.console.onError=true
+preference.studio.perspective.version=103

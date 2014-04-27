@@ -1,0 +1,7 @@
+exports.windowNames = {
+	error: 'ERROR',
+	mainMenu: 'MAIN_MENU',
+	registerTasks:'REGISTER_TASK',
+	inputTimeAvailable: 'INPUT_TIME_AVAILABLE',
+	availableTasks: 'AVAILABLE_TASKS'	
+};

@@ -1,0 +1,65 @@
+Logger started at: Sunday, April 27, 2014 11:27:47 AM CEST
+Component: com.aptana.js.debug.core.v8
+Version: 3.0.0
+[28:19.525] Recv: >1398590899525*version<
+[28:19.526] Sent: >21*1398590899525*1*3.0.0<
+[28:19.687] Recv: >1398590899526*option*monitorXHR*true<
+[28:19.687] Sent: >42*1398590899526*!unknown option <monitorXHR><
+[28:19.688] Recv: >1398590899527*option*suspendOnFirstLine*false<
+[28:19.688] Sent: >13*1398590899527<
+[28:19.688] Recv: >1398590899528*option*suspendOnExceptions*false<
+[28:19.733] Sent: >13*1398590899528<
+[28:19.733] Recv: >1398590899529*option*suspendOnErrors*true<
+[28:20.146] Sent: >13*1398590899529<
+[28:20.146] Recv: >1398590899530*option*suspendOnKeywords*true<
+[28:20.146] Sent: >13*1398590899530<
+[28:20.147] Recv: >1398590899531*option*bypassConstructors*false<
+[28:20.147] Sent: >50*1398590899531*!unknown option <bypassConstructors><
+[28:20.147] Recv: >1398590899532*option*stepFiltersEnabled*false<
+[28:20.147] Sent: >50*1398590899532*!unknown option <stepFiltersEnabled><
+[28:20.147] Recv: >1398590899533*detailFormatters<
+[28:20.147] Sent: >13*1398590899533<
+[28:20.148] Recv: >1398590899534*breakpoint*create*app:/control/controller.js*103*1*0**1<
+[28:20.303] Sent: >21*1398590899534*created<
+[28:20.304] Recv: >1398590899535*enable<
+[28:20.304] Sent: >13*resumed*start<
+[28:20.304] Sent: >13*1398590899535<
+[28:20.304] Sent: >46*scripts*created*1|ti:/webview.js|anonymous|1|1<
+[28:20.304] Sent: >44*scripts*created*2|ti:/kroll.js|anonymous|1|1<
+[28:20.305] Sent: >47*scripts*created*3|ti:/titanium.js|anonymous|1|1<
+[28:20.305] Sent: >49*scripts*created*4|ti:/properties.js|anonymous|1|1<
+[28:20.305] Sent: >45*scripts*created*5|ti:/events.js|anonymous|1|1<
+[28:20.305] Sent: >41*scripts*created*6|ti:/ui.js|anonymous|1|1<
+[28:20.305] Sent: >48*scripts*created*7|ti:/bootstrap.js|anonymous|1|1<
+[28:20.305] Sent: >47*scripts*created*8|ti:/tabgroup.js|anonymous|1|1<
+[28:20.305] Sent: >46*scripts*created*9|ti:/console.js|anonymous|1|1<
+[28:20.305] Sent: >44*scripts*created*10|ti:/path.js|anonymous|1|1<
+[28:20.306] Sent: >47*scripts*created*11|ti:/invoker.js|anonymous|1|1<
+[28:20.306] Sent: >43*scripts*created*12|ti:/tab.js|anonymous|1|1<
+[28:20.306] Sent: >43*scripts*created*13|ti:/url.js|anonymous|1|1<
+[28:20.306] Sent: >50*scripts*created*14|ti:/httpclient.js|anonymous|1|1<
+[28:20.306] Sent: >48*scripts*created*15|ti:/listview.js|anonymous|1|1<
+[28:20.306] Sent: >47*scripts*created*16|ti:/network.js|anonymous|1|1<
+[28:20.306] Sent: >46*scripts*created*17|ti:/window.js|anonymous|1|1<
+[28:20.306] Sent: >46*scripts*created*18|ti:/module.js|anonymous|1|1<
+[28:20.523] Sent: >46*scripts*created*19|app:///app.js|anonymous|1|1<
+[28:20.753] Sent: >61*scripts*created*20|app:///control/controller.js|anonymous|1|1<
+[28:20.873] Sent: >67*scripts*created*21|app:///tools/common/commonTools.js|anonymous|1|1<
+[28:21.94] Sent: >53*suspended*breakpoint*app:///control/controller.js*103<
+[28:21.95] Recv: >1398590899536*frames<
+[28:21.95] Sent: >188*1398590899536*0|handleAndroidBackButton||app:///control/controller.js|103|false|2646|22*1|startApplication||app:///control/controller.js|118|false|3000|23*2|||app:///app.js|23|false|376|24<
+[28:21.545] Recv: >1398590899537*variables*frame[0]<
+[28:22.600] Sent: >728*1398590899537*this|global|o|[object global]*loadGetTaskW|Function||[Function]*loadRegisterTaskW|Function||[Function]*removeNavigateAppListener|Function||[Function]*handleAndroidBackButton|Function||[Function]*loadErrorW|Function||[Function]*loadMainMenuW|Function||[Function]*addNavigateAppListener|Function||[Function]*loadAvailableTasksW|Function||[Function]*backArray|Array|wo|[object Array]*windowHandler|Function||[Function]*openWin|null|w|null*windowNames|Object|wo|[object Object]*prevWin|null|w|null*common|Object|wo|[object Object]*exitApplication|Function||[Function]*navigateApplication|Function||[Function]*console|Object|wo|[object Object]*persistentObjects|Array|wo|[object Array]*control|Object|wo|[object Object]<
+[28:22.600] Recv: >1398590899538*variables*frame[0]<
+[28:22.601] Sent: >728*1398590899538*this|global|o|[object global]*loadGetTaskW|Function||[Function]*loadRegisterTaskW|Function||[Function]*removeNavigateAppListener|Function||[Function]*handleAndroidBackButton|Function||[Function]*loadErrorW|Function||[Function]*loadMainMenuW|Function||[Function]*addNavigateAppListener|Function||[Function]*loadAvailableTasksW|Function||[Function]*backArray|Array|wo|[object Array]*windowHandler|Function||[Function]*openWin|null|w|null*windowNames|Object|wo|[object Object]*prevWin|null|w|null*common|Object|wo|[object Object]*exitApplication|Function||[Function]*navigateApplication|Function||[Function]*console|Object|wo|[object Object]*persistentObjects|Array|wo|[object Array]*control|Object|wo|[object Object]<
+[28:37.94] Recv: >*resume<
+[28:37.94] Sent: >14*resumed*resume<
+[28:37.405] Sent: >51*suspended*exception*app:///control/controller.js*68<
+[28:37.417] Recv: >1398590899539*frames<
+[28:37.417] Sent: >253*1398590899539*0|exitApplication||app:///control/controller.js|68|false|1978|25*1|handleAndroidBackButton||app:///control/controller.js|104|false|2721|22*2|startApplication||app:///control/controller.js|118|false|3000|23*3|||app:///app.js|23|false|376|24<
+[28:37.613] Recv: >1398590899540*variables*frame[0]<
+[28:40.82] Sent: >760*1398590899540*this|global|o|[object global]*loadGetTaskW|Function||[Function]*loadRegisterTaskW|Function||[Function]*removeNavigateAppListener|Function||[Function]*handleAndroidBackButton|Function||[Function]*loadErrorW|Function||[Function]*loadMainMenuW|Function||[Function]*addNavigateAppListener|Function||[Function]*loadAvailableTasksW|Function||[Function]*backArray|Array|wo|[object Array]*windowHandler|Function||[Function]*openWin|null|w|null*windowNames|Object|wo|[object Object]*prevWin|null|w|null*common|Object|wo|[object Object]*exitApplication|Function||[Function]*navigateApplication|Function||[Function]*activity|undefined|wl|undefined*console|Object|wo|[object Object]*persistentObjects|Array|wo|[object Array]*control|Object|wo|[object Object]<
+[28:40.82] Recv: >*resume<
+[28:40.82] Sent: >14*resumed*resume<
+[28:58.289] Recv: >*terminate<
+----------End of file----------

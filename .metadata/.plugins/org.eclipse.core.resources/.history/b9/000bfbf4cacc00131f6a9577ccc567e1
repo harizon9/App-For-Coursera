@@ -1,0 +1,5 @@
+function loadError(inParam){
+	
+}
+
+exports.loadError = loadError;
