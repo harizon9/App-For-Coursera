@@ -1,1 +1,88 @@
 [Sun Apr 27 11:28:58 CEST 2014] Connection closed
+[Sat May 03 10:33:42 CEST 2014] Connection closed
+[Sat May 03 10:44:26 CEST 2014] Connection closed
+[Sat May 03 10:56:00 CEST 2014] Connection closed
+[Sat May 03 11:08:41 CEST 2014] Connection closed
+[Sun May 04 14:52:04 CEST 2014] org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.value.ValueLoaderImpl.loadScopeFields(ValueLoaderImpl.java:195)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl.loadScopeObject(JsScopeImpl.java:77)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl$NoWith.loadDeferredData(JsScopeImpl.java:115)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl$NoWith.loadDeferredData(JsScopeImpl.java:1)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl.getDeferredData(JsScopeImpl.java:60)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl.getVariables(JsScopeImpl.java:55)
+	at com.aptana.js.debug.core.v8.V8DebugHost.getScopeVariables(V8DebugHost.java:506)
+	at com.aptana.js.debug.core.v8.V8DebugHost.flattenScopes(V8DebugHost.java:479)
+	at com.aptana.js.debug.core.v8.V8DebugHost.listVariables(V8DebugHost.java:451)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.handleMessage(AbstractDebugHost.java:262)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.access$5(AbstractDebugHost.java:244)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost$1.run(AbstractDebugHost.java:188)
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+[Sun May 04 14:53:22 CEST 2014] org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.value.ValueLoaderImpl.loadScopeFields(ValueLoaderImpl.java:195)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl.loadScopeObject(JsScopeImpl.java:77)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl$NoWith.loadDeferredData(JsScopeImpl.java:115)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl$NoWith.loadDeferredData(JsScopeImpl.java:1)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl.getDeferredData(JsScopeImpl.java:60)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl.getVariables(JsScopeImpl.java:55)
+	at com.aptana.js.debug.core.v8.V8DebugHost.getScopeVariables(V8DebugHost.java:506)
+	at com.aptana.js.debug.core.v8.V8DebugHost.flattenScopes(V8DebugHost.java:479)
+	at com.aptana.js.debug.core.v8.V8DebugHost.listVariables(V8DebugHost.java:451)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.handleMessage(AbstractDebugHost.java:262)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.access$5(AbstractDebugHost.java:244)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost$1.run(AbstractDebugHost.java:188)
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+[Sun May 04 14:56:01 CEST 2014] org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.value.ValueLoaderImpl.loadScopeFields(ValueLoaderImpl.java:195)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl.loadScopeObject(JsScopeImpl.java:77)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl$NoWith.loadDeferredData(JsScopeImpl.java:115)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl$NoWith.loadDeferredData(JsScopeImpl.java:1)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl.getDeferredData(JsScopeImpl.java:60)
+	at org.chromium.sdk.internal.v8native.value.JsScopeImpl.getVariables(JsScopeImpl.java:55)
+	at com.aptana.js.debug.core.v8.V8DebugHost.getScopeVariables(V8DebugHost.java:506)
+	at com.aptana.js.debug.core.v8.V8DebugHost.flattenScopes(V8DebugHost.java:479)
+	at com.aptana.js.debug.core.v8.V8DebugHost.listVariables(V8DebugHost.java:451)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.handleMessage(AbstractDebugHost.java:262)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.access$5(AbstractDebugHost.java:244)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost$1.run(AbstractDebugHost.java:188)
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+[Sun May 04 14:58:10 CEST 2014] Connection closed
+[Sun May 04 15:05:12 CEST 2014] Connection closed
+[Sun May 04 15:26:48 CEST 2014] Connection closed
+[Sat May 24 11:00:42 CEST 2014] Connection closed
+[Wed Jul 09 20:29:31 CEST 2014] Connection closed

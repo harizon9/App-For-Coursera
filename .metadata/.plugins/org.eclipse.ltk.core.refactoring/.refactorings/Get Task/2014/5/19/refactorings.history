@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Get Task/Resources/ui/windows/inputTime&apos; to &apos;inputTime.js&apos;" description="Rename resource &apos;inputTime&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/ui/windows/inputTime" name="inputTime.js" stamp="1399209754172" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Get Task/Resources/db/tableChecker.js&apos; to &apos;installdb.js&apos;" description="Rename resource &apos;tableChecker.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/db/tableChecker.js" name="installdb.js" stamp="1399746194348" updateReferences="true"/>
+</session>

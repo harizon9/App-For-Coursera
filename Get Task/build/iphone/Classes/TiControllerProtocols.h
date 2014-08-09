@@ -52,7 +52,7 @@
 @end
 
 /**
- Protocol for containment controller. Implemented by UIViewControllers that can host GetTask Windows
+ Protocol for containment controller. Implemented by UIViewControllers that can host T4T Windows
  */
 @protocol TiControllerContainment <NSObject>
 @required

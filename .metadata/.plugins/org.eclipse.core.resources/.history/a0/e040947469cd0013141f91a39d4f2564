@@ -1,5 +1,0 @@
-exports.error = 'ERROR';
-exports.mainMenu = 'MAIN_MENU';
-exports.registerTasks ='REGISTER_TASK';
-exports.inputTimeAvailable = 'INPUT_TIME_AVAILABLE';
-exports.availableTasks = 'AVAILABLE_TASKS';

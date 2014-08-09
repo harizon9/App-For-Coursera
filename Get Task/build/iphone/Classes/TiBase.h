@@ -60,7 +60,7 @@ extern "C" {
 	#define KMETHOD_DEBUG MEMORY_DEBUG
 #endif
 
-// in simulator we redefine to format for GetTask Developer console
+// in simulator we redefine to format for T4T Developer console
 
 
 #define TI_INLINE static __inline__
@@ -309,13 +309,13 @@ void TiExceptionThrowWithNameAndReason(NSString *exceptionName, NSString *reason
 #define DEFINE_EXCEPTIONS \
 - (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = [@"org.gettask." stringByAppendingString:NSStringFromClass([self class])];\
+	NSString * exceptionName = [@"org.t4t." stringByAppendingString:NSStringFromClass([self class])];\
 	TiExceptionThrowWithNameAndReason(exceptionName,reason,subreason,location);\
 }\
 \
 + (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = @"org.gettask";\
+	NSString * exceptionName = @"org.t4t";\
 	TiExceptionThrowWithNameAndReason(exceptionName,reason,subreason,location);\
 }\
 
@@ -415,28 +415,28 @@ DebugLog(@"[WARN] Ti%@.%@ DEPRECATED in %@, in favor of %@.",@"tanium",api,in,ne
 
  //MUST BE NEGATIVE, as it inhabits the same space as UIBarButtonSystemItem
 enum {
-	UIGetTaskNativeItemNone = -1, 
-	UIGetTaskNativeItemSpinner = -2,
-	UIGetTaskNativeItemProgressBar = -3,
+	UIT4TNativeItemNone = -1, 
+	UIT4TNativeItemSpinner = -2,
+	UIT4TNativeItemProgressBar = -3,
 	
-	UIGetTaskNativeItemSlider = -4,
-	UIGetTaskNativeItemSwitch = -5,
-	UIGetTaskNativeItemMultiButton = -6,
-	UIGetTaskNativeItemSegmented = -7,
+	UIT4TNativeItemSlider = -4,
+	UIT4TNativeItemSwitch = -5,
+	UIT4TNativeItemMultiButton = -6,
+	UIT4TNativeItemSegmented = -7,
 	
-	UIGetTaskNativeItemTextView = -8,
-	UIGetTaskNativeItemTextField = -9,
-	UIGetTaskNativeItemSearchBar = -10,
+	UIT4TNativeItemTextView = -8,
+	UIT4TNativeItemTextField = -9,
+	UIT4TNativeItemSearchBar = -10,
 	
-	UIGetTaskNativeItemPicker = -11,
-	UIGetTaskNativeItemDatePicker = -12,
+	UIT4TNativeItemPicker = -11,
+	UIT4TNativeItemDatePicker = -12,
 	
-	UIGetTaskNativeItemInfoLight = -13,
-	UIGetTaskNativeItemInfoDark = -14,
+	UIT4TNativeItemInfoLight = -13,
+	UIT4TNativeItemInfoDark = -14,
 	
-	UIGetTaskNativeItemDisclosure = -15,
+	UIT4TNativeItemDisclosure = -15,
 	
-	UIGetTaskNativeItemContactAdd = -16
+	UIT4TNativeItemContactAdd = -16
 };
 
 
@@ -614,7 +614,7 @@ void incrementKrollCounter();
 void decrementKrollCounter();
     
 /**
- *	TiThreadPerformOnMainThread should replace all GetTask instances of
+ *	TiThreadPerformOnMainThread should replace all T4T instances of
  *	performSelectorOnMainThread, ESPECIALLY if wait is to be yes. That way,
  *	exceptional-case main thread activities can process them outside of the
  *	standard event loop.

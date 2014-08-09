@@ -7,8 +7,8 @@
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 
-#ifndef GetTask_ThirdpartyNS_h
-#define GetTask_ThirdpartyNS_h
+#ifndef T4T_ThirdpartyNS_h
+#define T4T_ThirdpartyNS_h
 
 #ifndef __TI_NAMESPACE_PREFIX_
 #define __TI_NAMESPACE_PREFIX_	TI

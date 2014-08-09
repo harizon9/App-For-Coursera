@@ -10,6 +10,6 @@
 </listAttribute>
 <stringAttribute key="process_factory_id" value="com.appcelerator.titanium.ui.logLevelFilteringProcessFactory"/>
 <stringAttribute key="sdk_version" value="7.1"/>
-<stringAttribute key="simulator_debug_config" value="192.168.1.34:51237"/>
+<stringAttribute key="simulator_debug_config" value="192.168.1.66:54716"/>
 <stringAttribute key="simulator_version" value="7.1"/>
 </launchConfiguration>

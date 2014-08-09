@@ -1,26 +1,55 @@
 var layout = require('ui/common/layout');
-var programMenu = require('ui/common/menu');
+var controlStyles = require('ui/styles/controlStyles');
+//var registerTaskControl = require('ui/controls/registerTask');
+var inputTime = require('ui/controls/inputTime');
+var colorCodes = require('ui/styles/colorCodes');
+var openDB = require('db/opendb');
+var common = require('/tools/common/commonTools');
+var viewNames = require('control/viewNames');
 
 function loadRegisterTask(inParam){
 	
-	var newWin = Ti.UI.createWindow({});
+	var newWinDisplay = Ti.UI.createView({top:0, left:0, right:0, bottom:layout.params.menu.height, backgroundColor:colorCodes.ApplicationBackgroundColor, layout:'vertical'});
 	
-	var newWinDisplay = Ti.UI.createView({top:0, left:0, right:0, bottom:layout.params.menu.height, backgroundColor:'blue'});
-	//var newWinDisplay = Ti.UI.createView({top:0, left:0, right:0, bottom:0, backgroundColor:'blue'});
-	
-	newWin.add(newWinDisplay);
-	
-	var newLabel = Ti.UI.createLabel({text:'REGISTER TASKS', color:'#fff'});
+	var newLabel = Ti.UI.createLabel({text:Ti.Locale.getString('register_task'), color:'#000', font:{fontSize:28}, top:'10%'});
+	//var newLabel = Ti.UI.createLabel({text:Ti.Locale.getString('register_task'), color:'#fff'});
 	newWinDisplay.add(newLabel);
 	
-	var progMenu = programMenu.loadMenuBar();
-	newWin.add(progMenu);
+	var lineView1 = Ti.UI.createView({top:'1%', left:0, height:'1dp', width:'100%', backgroundColor:colorCodes.HorizontalBarColor});
+	newWinDisplay.add(lineView1);
 	
-	newWin.addEventListener('close', function(e){
-		newWin = null;
+	var taskDescription = Ti.UI.createTextField({top:'5%', width:'95%', height:32, borderColor:colorCodes.TextBoxBorderColor ,borderWidth:colorCodes.TextBoxBorderWidth, borderRadius:colorCodes.ButtonBorderRadius, keyboardType:Ti.UI.KEYBOARD_DEFAULT, textAlign:'left',
+						hintText:Ti.Locale.getString('register_task'), backgroundColor:colorCodes.ApplicationBackgroundColor});
+	newWinDisplay.add(taskDescription);
+	
+	var offset = 7;
+	var inputTimeTextDimensions = 32;
+	
+	var inputTimeControl = inputTime.inputTimeView({top:'1%', textBoxDimension: inputTimeTextDimensions, controlOffset:offset, buttonText:Ti.Locale.getString('button_register_tasks')});
+	newWinDisplay.add(inputTimeControl);
+	
+	newWinDisplay.addEventListener('close', function(e){
+		newWinDisplay = null;
 	});
 	
-	return newWin;
+	newWinDisplay.addEventListener('inputTimeButtonPressed', function(e){
+		// TASKNAME : inParam.taskName
+		// TASKPROP1 : inParam.done
+		// TASKPROP2 : inParam.time
+		
+		if(taskDescription.value.length > 0){
+			openDB.addTask({taskName:taskDescription.value, done:0, time:e.TaskTime, repeatable:0});
+			alert(Ti.Locale.getString('task_is_registered'));
+			common.navHandler({TYPE:viewNames.GETTASK});
+		}
+	});
+	
+	newWinDisplay.addEventListener('doubletap', function(e){
+		taskDescription.blur();
+		inputTimeControl.fireEvent('blurText', {});
+	});
+	
+	return newWinDisplay;
 	
 }
 

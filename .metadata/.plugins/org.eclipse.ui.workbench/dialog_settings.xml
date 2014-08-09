@@ -4,18 +4,28 @@
 		<item value="1200" key="dialogWidth"/>
 		<item value="675" key="dialogHeight"/>
 		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textArray">
+			<item value="c"/>
 		</list>
 		<list key="orderedElements">
+			<item value="org.eclipse.ui.cheatsheets.views.CheatSheetView"/>
 		</list>
 		<list key="textEntries">
+			<item value="1"/>
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="171" key="DIALOG_Y_ORIGIN"/>
-		<item value="651" key="DIALOG_X_ORIGIN"/>
+		<item value="628" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 	<section name="ImportExportAction">
+		<item value="com.appcelerator.titanium.ui.import.wizard" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="com.appcelerator.titanium.import.wizard.category"/>
+		</list>
 	</section>
 </section>

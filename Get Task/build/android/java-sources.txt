@@ -1,6 +1,0 @@
-"/Users/HN/Documents/Courses/App/Get Task/build/android/gen/com/swc/gettask/ApplicationStylesheet.java"
-"/Users/HN/Documents/Courses/App/Get Task/build/android/gen/com/swc/gettask/AssetCryptImpl.java"
-"/Users/HN/Documents/Courses/App/Get Task/build/android/gen/com/swc/gettask/GetTaskActivity.java"
-"/Users/HN/Documents/Courses/App/Get Task/build/android/gen/com/swc/gettask/GetTaskAppInfo.java"
-"/Users/HN/Documents/Courses/App/Get Task/build/android/gen/com/swc/gettask/GetTaskApplication.java"
-"/Users/HN/Documents/Courses/App/Get Task/build/android/gen/com/swc/gettask/R.java"

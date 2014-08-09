@@ -17,7 +17,7 @@
 			<string>com.swc.gettask</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>gettask</string>
+				<string>t4t</string>
 			</array>
 		</dict>
 	</array>
@@ -32,9 +32,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.0</string>
+	<string>1.0.0.1407536260403</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.0</string>
+	<string>1.0.0.1407536260403</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIRequiresPersistentWiFi</key>

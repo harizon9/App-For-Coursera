@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="welcome_message">Välkommen</string>
+    <string name="register_task">Registrera uppgift</string>
+    <string name="available_tasks">Tilgängliga uppgifter</string>
+    <string name="get_task">Hämta uppgift</string>
+    <string name="how_much_time_you_have">Hur mycket tid har du?</string>
+    <string name="button_get_tasks">Hämta!</string>
+    <string name="button_register_tasks">Registrera!</string>
+    <string name="first_run_configuration">Konfigurera</string>
+    <string name="button_add">Lägg till</string>
+    <string name="button_show">Visa</string>
+    <string name="button_get">Hämta</string>
+    <string name="enter_task_desciption">Beskrivning...</string>
+    <string name="choose_category">Kategori:</string>
+    <string name="button_exit">Avsluta</string>
+    <string name="category_home">Hem</string>
+    <string name="category_work">Arbete</string>
+    <string name="category_recreation">Nöje</string>
+    <string name="category_children">Barn</string>
+    <string name="category_select">Välja kategori</string>
+    <string name="task_is_registered">Uppgift registrerad</string>
+    <string name="task_is_deleted">Uppgift raderad</string>
+    <string name="firstRun_Yourname">Ditt namn?</string>
+    <string name="firstRun_yourAge">Ditt ålder?</string>
+    <string name="task_details">Uppgift beskrivning</string>
+    <string name="task_description">Uppgift beskrivning</string>
+    <string name="finished_task">Avslutad</string>
+    <string name="statistics">Statistik</string>
+    <string name="reset_database">Återställa databas</string>
+    <string name="settings">Inställningar</string>
+    <string name="hour_representation">t</string>
+    <string name="minute_representation">m</string>    
+    <string name="all_tasks_deleted">Alla uppgifter har tagits bort från databasen</string>
+    <string name="all_tasks_deleted_OK_NOTOK">Bekräfta: Alla data raderas från databasen</string>
+    <string name="statistics_1">Du har skapat</string>
+    <string name="statistics_2">timmar produktiv tid av din fritid</string>
+    <string name="statistics_3">Du har slutfört</string>
+    <string name="statistics_4">uppgifter</string>
+    <string name="done">Klar</string>
+    <string name="not_done">Inte klar</string>
+    <string name="cancel">Avbryt</string>
+</resources>

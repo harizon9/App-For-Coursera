@@ -302,10 +302,10 @@ bool KrollSetProperty(TiContextRef jsContext, TiObjectRef object, TiStringRef pr
 
 // forward declare these
 
-//@interface GetTaskObject : NSObject
+//@interface T4TObject : NSObject
 //@end
 
-@interface GetTaskObject (Private)
+@interface T4TObject (Private)
 -(NSDictionary*)modules;
 @end
 
@@ -323,9 +323,9 @@ void KrollPropertyNames(TiContextRef ctx, TiObjectRef object, TiPropertyNameAccu
 	{
 		id target = [o target];
 		
-		if ([o isKindOfClass:[GetTaskObject class]])
+		if ([o isKindOfClass:[T4TObject class]])
 		{
-			for (NSString *key in [[(GetTaskObject*)o modules] allKeys])
+			for (NSString *key in [[(T4TObject*)o modules] allKeys])
 			{
 				TiStringRef value = TiStringCreateWithUTF8CString([key UTF8String]);
 				TiPropertyNameAccumulatorAddName(propertyNames,value);

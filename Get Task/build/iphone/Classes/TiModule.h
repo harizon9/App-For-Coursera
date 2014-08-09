@@ -13,7 +13,7 @@
 @class TiHost;
 
 /**
- The base class for all GetTask modules
+ The base class for all T4T modules
  */
 @interface TiModule : TiProxy 
 {
@@ -51,30 +51,30 @@
 // lifecycle
 
 /**
- GetTask Platform calls this method on startup.
+ T4T Platform calls this method on startup.
  */
 -(void)startup;
 
 /**
- GetTask Platform calls this method on shutdown.
+ T4T Platform calls this method on shutdown.
  @param sender The sender of the event.
  */
 -(void)shutdown:(id)sender;
 
 /**
- GetTask Platform calls this method on suspend.
+ T4T Platform calls this method on suspend.
  @param sender The sender of the event.
  */
 -(void)suspend:(id)sender;
 
 /**
- GetTask Platform calls this method on entering background.
+ T4T Platform calls this method on entering background.
  @param sender The sender of the event.
  */
 -(void)paused:(id)sender;
 
 /**
- GetTask Platform calls this method on resume.
+ T4T Platform calls this method on resume.
  @param sender The sender of the event.
  */
 -(void)resume:(id)sender;

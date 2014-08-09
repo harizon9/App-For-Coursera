@@ -16,23 +16,23 @@
 {
 	switch (type)
 	{
-		case UIGetTaskNativeItemInfoLight:
+		case UIT4TNativeItemInfoLight:
 		{
 			return [UIButton buttonWithType:UIButtonTypeInfoLight];
 		}
-		case UIGetTaskNativeItemInfoDark:
+		case UIT4TNativeItemInfoDark:
 		{
 			return [UIButton buttonWithType:UIButtonTypeInfoDark];
 		}
-		case UIGetTaskNativeItemDisclosure:
+		case UIT4TNativeItemDisclosure:
 		{
 			return [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
 		}
-		case UIGetTaskNativeItemContactAdd:
+		case UIT4TNativeItemContactAdd:
 		{
 			return [UIButton buttonWithType:UIButtonTypeContactAdd];
 		}
-		case UIGetTaskNativeItemSpinner:
+		case UIT4TNativeItemSpinner:
 		{
 			UIActivityIndicatorView *button = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite] autorelease];
 			[button startAnimating];

@@ -1,8 +1,28 @@
-exports.whiteColor = '#ffffff';
-exports.blackColor = '#000000';
-exports.lightBlueColor = '#58D3F7';
-exports.darkBlueColor = '#0404B4';
-exports.redColor = '#ff0000';
-exports.lightGreyColor = '#E6E6E6';
-exports.darkGretColor = '#6E6E6E';
-exports.headingBlueColor = '#00BFFF';
+// ----------- Control Color -------------
+exports.ApplicationBackgroundColor = '#ffffff';
+exports.ApplicationMenuColor = '#F7BE81';
+exports.TextBoxBorderColor = '#F7BE81';
+exports.HorizontalBarColor = '#F7BE81';
+exports.WizardLeftButtonColor = '#DF7401';
+exports.WizardRightButtonColor = '#F7BE81';
+exports.WizardButtonTextColor = '#FFF';
+exports.MenuButtonHighlightColor = '#F6E3CE';
+exports.MenuForegroundColor = '#FFF';
+exports.ButtonBorderColor = '#F7BE81';
+exports.ButtonBackgroundColor = '#F7BE81';
+exports.ButtonTextColor = '#FFF';
+exports.ListOfTasksViewBackgroundColor = '#FFF';
+exports.ListOfTasksViewBorderColor = '#FFF';
+
+
+
+// ----------- Border Radius -------------
+exports.ButtonBorderRadius = 4;
+exports.TextBoxBorderRadius = 4;
+exports.WizardButtonBorderRadius = 4;
+exports.ListOfTasksViewBorderRadius = 4;
+
+// ----------- Control Width--------------
+exports.ButtonBorderWidth = 1;
+exports.TextBoxBorderWidth = 1;
+exports.ListOfTasksViewBorderWidth = 0;

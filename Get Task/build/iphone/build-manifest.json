@@ -1,13 +1,14 @@
 {
-	"target": "simulator",
-	"deployType": "development",
-	"deviceFamily": "universal",
+	"target": "device",
+	"deployType": "test",
+	"deviceFamily": "iphone",
+	"developerName": "Hari Nidamarthy (YF2GYEYN38)",
 	"iosSdkPath": "/Users/HN/Library/Application Support/Titanium/mobilesdk/osx/3.2.2.GA/iphone",
 	"tiCoreHash": "77157e1ffaec640cf559356a147b6a4c",
 	"modulesHash": "d41d8cd98f00b204e9800998ecf8427e",
 	"modulesNativeHash": "d41d8cd98f00b204e9800998ecf8427e",
 	"gitHash": "96e9a07",
-	"name": "Get Task",
+	"name": "T4T",
 	"id": "com.swc.gettask",
 	"analytics": true,
 	"publisher": "HN",
@@ -16,8 +17,8 @@
 	"description": "Fill the gaps in your life",
 	"copyright": "2014 by HN",
 	"guid": "cd71b3fd-d1e0-46c4-8aee-69b1e17dd8f6",
-	"skipJSMinification": true,
+	"skipJSMinification": false,
 	"forceCopy": false,
 	"forceCopyAll": false,
-	"encryptJS": false
+	"encryptJS": true
 }

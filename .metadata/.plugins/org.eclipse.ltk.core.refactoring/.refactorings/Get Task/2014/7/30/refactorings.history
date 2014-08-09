@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Get Task/Resources/ui/windows/availableTasks.js&apos; to &apos;settings.js&apos;" description="Rename resource &apos;availableTasks.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/ui/windows/availableTasks.js" name="settings.js" stamp="1405840363180" updateReferences="true"/>
+</session>

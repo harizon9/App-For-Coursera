@@ -935,8 +935,8 @@ TI_INLINE void waitForMemoryPanicCleared();   //WARNING: This must never be run 
 		UIDevice *currentDevice = [UIDevice currentDevice];
 		NSString *currentLocaleIdentifier = [[NSLocale currentLocale] localeIdentifier];
 		NSString *currentDeviceInfo = [NSString stringWithFormat:@"%@/%@; %@; %@;",[currentDevice model],[currentDevice systemVersion],[currentDevice systemName],currentLocaleIdentifier];
-		NSString *kGetTaskUserAgentPrefix = [NSString stringWithFormat:@"%s%s%s %s%s","Appc","eler","ator","Tita","nium"];
-		userAgent = [[NSString stringWithFormat:@"%@/%s (%@)",kGetTaskUserAgentPrefix,TI_VERSION_STR,currentDeviceInfo] retain];
+		NSString *kT4TUserAgentPrefix = [NSString stringWithFormat:@"%s%s%s %s%s","Appc","eler","ator","Tita","nium"];
+		userAgent = [[NSString stringWithFormat:@"%@/%s (%@)",kT4TUserAgentPrefix,TI_VERSION_STR,currentDeviceInfo] retain];
 	}
 	return userAgent;
 }
@@ -1076,7 +1076,7 @@ TI_INLINE void waitForMemoryPanicCleared();   //WARNING: This must never be run 
             errorString = [error localizedDescription];
         } else {
             // If we have no data...
-            // This should never happen on a GetTask app using the node.js CLI
+            // This should never happen on a T4T app using the node.js CLI
             errorString = @"File not found";
         }
         if(errorString != nil) {

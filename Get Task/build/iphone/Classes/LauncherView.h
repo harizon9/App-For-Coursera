@@ -9,9 +9,9 @@
 
 
 // A good bit of this code was derived from the Three20 project
-// and was customized to work inside GetTask
+// and was customized to work inside T4T
 //
-// All modifications by GetTask are licensed under 
+// All modifications by T4T are licensed under 
 // the Apache License, Version 2.0
 //
 //

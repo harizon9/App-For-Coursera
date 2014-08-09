@@ -1,0 +1,141 @@
+var conn;
+
+if(Ti.Platform.osname == 'android'){
+	var path = Titanium.Filesystem.resourcesDirectory + '/db/mrkarl.sqlite';
+	conn = Ti.Database.install(path,'mrkarl');
+}
+else{
+	conn = Ti.Database.install('db/mrkarl.sqlite','mrkarl');
+}
+
+var dbObject;
+
+
+exports.tableApplicationProperties = 'APPPROPS';
+exports.tableApplicationProperties = 'TASKPROPS';
+exports.propName = 'PROPNAME';
+exports.prop1 = 'PROP1';
+exports.prop2 = 'PROP2';
+exports.prop3 = 'PROP3';
+exports.prop4 = 'PROP4';
+exports.prop5 = 'PROP5';
+exports.prop6 = 'PROP6';
+exports.taskName = 'TASKNAME';
+exports.taskProps1 = 'TASKPROP1';
+exports.taskProps2 = 'TASKPROP2';
+exports.taskProps3 = 'TASKPROP3';
+exports.taskProps12 = 'TASKPROP12';
+exports.username = 'username';
+
+
+function isInitialized(){
+		
+		 var checkIfDirty = 'SELECT * FROM APPPROPS WHERE PROPNAME="dirtyFlag"';
+		 //var checkIfDirty = 'UPDATE APPPROPS SET PROP1="0" WHERE PROPNAME="dirtyFlag"';
+		 dbObject = conn.execute(checkIfDirty);
+		 var dirty = false;
+		 
+		 while(dbObject.isValidRow()){
+		 	Ti.API.info(dbObject.fieldByName('PROP1', Ti.Database.FIELD_TYPE_INT));
+		 	if(dbObject.fieldByName('PROP1', Ti.Database.FIELD_TYPE_INT) == 1105){
+		 		dirty = true;
+		 	} else{
+		 		dirty = false;
+		 	}
+		 	dbObject.next();		 	
+		 }
+		 		 
+		 return dirty;
+}
+
+
+function runQuery(inParam){
+	var queryReturnObject = conn.execute(inParam);
+	return queryReturnObject;
+}
+
+function getTasksByTime(_time){
+	var query = 'SELECT * FROM TASKPROPS WHERE TASKPROP2 <= ' + _time + ';';
+	return conn.execute(query);
+}
+
+function getTaskByID(_taskID){
+	var query = 'SELECT * FROM TASKPROPS WHERE TASKPROP2 = ' + _taskID + ';';
+	return conn.execute(query);
+}
+
+function deleteTask(_taskID){
+	var query = 'DELETE FROM TASKPROPS WHERE TASKPROP12 = ' + _taskID + ';';
+	return conn.execute(query);
+}
+
+function deleteAllTasks(){
+	var query = 'DELETE FROM TASKPROPS;';
+	return conn.execute(query);
+}
+
+function updateAchievement(inParam){
+	
+	// get the current number of tasks and current time
+	var noOfTasks;
+	var timeForTasks;
+	var dbFieldFinishedTasks = 'finishedtasks';
+	var dbFieldProductiveTime = 'productivetime';
+	
+	var queryGetTasksNo = "SELECT * FROM APPPROPS WHERE PROPNAME = '" + dbFieldFinishedTasks + "';";
+	qReturnTasksNo = conn.execute(queryGetTasksNo);
+	
+	var queryGetTasksTime = "SELECT * FROM APPPROPS WHERE PROPNAME = '" + dbFieldProductiveTime + "';";
+	qReturnTasksTime = conn.execute(queryGetTasksTime);
+	
+	while(qReturnTasksNo.isValidRow()){
+		noOfTasks = qReturnTasksNo.fieldByName(dbFieldFinishedTasks, Ti.Database.FIELD_TYPE_STRING);
+		qReturnTasks.next();
+	}
+	
+	while(queryGetTasksTime.isValidRow()){
+		timeForTasks = queryGetTasksTime.fieldByName(dbFieldProductiveTime, Ti.Database.FIELD_TYPE_STRING);
+		qReturnTasks.next();
+	}
+	
+	var query = "UPDATE APPPROPS SET PROP1 = '" + inParam.taskName + "', TASKPROP1 = " + inParam.done + ", TASKPROP3 = " + inParam.repeatable + ", TASKPROP2 = '" + inParam.taskTime +
+							"' WHERE TASKPROP12 = " + inParam.taskID + ";";
+	conn.execute(query);
+}
+
+function addTask(inParam){
+	// TASKNAME : inParam.taskName
+	// TASKPROP1 : inParam.done
+	// TASKPROP2 : inParam.time
+	// TASKPROP12 : inParam.ID
+	var query = "INSERT INTO TASKPROPS (TASKNAME, TASKPROP1, TASKPROP2, TASKPROP3) VALUES ('" + inParam.taskName + "'," + inParam.done + "," + inParam.time + "," + inParam.repeatable + ");";
+	conn.execute(query);
+}
+
+function updateTask(inParam){
+	// TASKNAME : inParam.taskName
+	// TASKPROP1 : inParam.done 0 - not done, 1 - done
+	// TASKPROP2 : inParam.time
+	// TASKPROP12 : inParam.ID
+	var query = "UPDATE TASKPROPS SET TASKNAME = '" + inParam.taskName + "', TASKPROP1 = " + inParam.done + ", TASKPROP3 = " + inParam.repeatable + ", TASKPROP2 = '" + inParam.taskTime +
+							"' WHERE TASKPROP12 = " + inParam.taskID + ";";
+	conn.execute(query);
+}
+	
+function close(){
+	dbObject.close();
+	conn.close();
+	dbObject = null;
+	conn = null;
+}
+
+exports.getTaskByID = getTaskByID;
+exports.deleteTask = deleteTask;
+exports.deleteAllTasks = deleteAllTasks;
+exports.getTasksByTime = getTasksByTime;
+//exports.getTasks = getTasks;
+exports.addTask = addTask;
+exports.updateTask = updateTask;
+exports.isInitialized = isInitialized;
+exports.runQuery = runQuery;
+exports.close = close;

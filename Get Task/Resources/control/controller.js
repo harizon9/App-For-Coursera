@@ -1,8 +1,11 @@
 var common = require('/tools/common/commonTools');
-var windowNames = require('control/windowNames');
+var viewNames = require('control/viewNames');
+var containerWindow = require('ui/windows/containerWindow');
+var containerWindowObj = containerWindow.loadContainerWindow();
+var openDB = require('db/opendb');
 
-var openWin = null;
-var prevWin = null;
+var openView = null;
+var prevView = null;
 var backArray = [];
 
 function processBackButton(inParam){
@@ -19,54 +22,62 @@ function processBackButton(inParam){
 }
 
 function windowHandler(inParam){
-	backArray.push(inParam.WIN);
+	backArray.push(inParam.VIEW);
 
-	prevWin = openWin;
+	prevView = openView;
 
-	openWin = inParam.WIN;
+	openView = inParam.VIEW;
 	
-	openWin.open();
+	containerWindowObj.add(openView);
 	
-	if(prevWin){
-		prevWin.close();
+	if(prevView){		
+		containerWindowObj.remove(prevView);
 		prevWin = null;
 	}
 }
 
-function loadErrorW(inParam){
-	var loadErrorObject = require('ui/windows/errorWindow');
-	var loadErrorWindow = loadErrorObject.loadError();
-	windowHandler({WIN:loadErrorWindow, PARAMS:{TYPE:windowNames.ERROR}});
-}
-
-function loadMainMenuW(inParam){
-	var loadMainMenuObject = require('ui/windows/mainmenu');
-	var loadMainMenuWindow = loadMainMenuObject.loadMainMenu();
-	windowHandler({WIN:loadMainMenuWindow, PARAMS:{TYPE:windowNames.MAINMENU}});
+function loadGetTaskView(inParam){
+	var viewRef = require('ui/windows/getTask');
+	var viewObj = viewRef.loadGetTask();
+	windowHandler({VIEW:viewObj, PARAMS:{TYPE:viewNames.GETTASK}});
 }
 
 function loadRegisterTaskW(inParam){
-	var loadRegisterTaskObject = require('ui/windows/registerTask');
-	var loadRegisterTaskWindow = loadRegisterTaskObject .loadRegisterTask();
-	windowHandler({WIN:loadRegisterTaskWindow, PARAMS:{TYPE:windowNames.REGISTERTASK}});
+	var viewRef = require('ui/windows/registerTask');
+	var viewObj = viewRef.loadRegisterTask();
+	windowHandler({VIEW:viewObj, PARAMS:{TYPE:viewNames.REGISTERTASK}});
 }
 
-function loadGetTaskW(inParam){
-	var loadGetTaskObject = require('ui/windows/getTask');
-	var loadGetTaskWindow = loadGetTaskObject.loadGetTask();
-	windowHandler({WIN:loadGetTaskWindow, PARAMS:{TYPE:windowNames.GETTASK}});
+function loadSettingsW(inParam){
+	var viewRef = require('ui/windows/settings');
+	var viewObj = viewRef.loadSettings();
+	windowHandler({VIEW:viewObj, PARAMS:{TYPE:viewNames.SETTINGS}});
 }
 
-function loadAvailableTasksW(inParam){
-	var loadAvailableTasksObject = require('ui/windows/availableTasks');
-	var loadAvailableTasksWindow = loadAvailableTasksObject.loadAvailableTasks();
-	windowHandler({WIN:loadAvailableTasksWindow, PARAMS:{TYPE:windowNames.AVAILABLETASKS}});
+function loadFirstRunConfigW(inParam){
+	var viewRef = require('ui/windows/firstRun');
+	var viewObj = viewRef.loadFirstRun(inParam);
+	windowHandler({VIEW:viewObj, PARAMS:{TYPE:viewNames.FIRSTRUN}});
+}
+
+function loadShowTaskW(inParam){
+	var viewRef = require('ui/windows/theTask');
+	var viewObj = viewRef.loadTask(inParam);
+	windowHandler({VIEW:viewObj, PARAMS:{TYPE:viewNames.SHOWTASKS}});
+	
+}
+
+function loadStatisticsW(inParam){
+	var viewRef = require('ui/windows/statistics');
+	var viewObj = viewRef.loadStatistics(inParam);
+	windowHandler({VIEW:viewObj, PARAMS:{TYPE:viewNames.STATISTICS}});
+	
 }
 
 function exitApplication(){
 	removeNavigateAppListener();
-	openWin.close();
-	openWin = null;
+	containerWindowObj.close();
+	containerWindowObj = null;
 	
 	if(Ti.Platform.osname == 'android'){
 		var activity = Ti.Android.currentActivity;
@@ -76,22 +87,31 @@ function exitApplication(){
 
 function navigateApplication(inParam){
 	switch(inParam.TYPE){
-		case windowNames.ERROR:
+		case viewNames.ERROR:
 			loadErrorW(inParam);
 			break;
-		case windowNames.MAINMENU:
+		case viewNames.MAINMENU:
 			loadMainMenuW(inParam);
 			break;
-		case windowNames.REGISTERTASK:
+		case viewNames.REGISTERTASK:
 			loadRegisterTaskW(inParam);
 			break;
-		case windowNames.GETTASK:
-			loadGetTaskW(inParam);
+		case viewNames.GETTASK:
+			loadGetTaskView(inParam);
 			break;
-		case windowNames.AVAILABLETASKS:
-			loadAvailableTasksW(inParam);
+		case viewNames.SETTINGS:
+			loadSettingsW(inParam);
 			break;
-		case windowNames.EXIT:
+		case viewNames.FIRSTRUN:
+			loadFirstRunConfigW(inParam);
+			break;
+		case viewNames.SHOWTASKS:
+			loadShowTaskW(inParam);
+			break;
+		case viewNames.STATISTICS:
+			loadStatisticsW(inParam);
+			break;
+		case viewNames.EXIT:
 			exitApplication();
 			break;
 		default:
@@ -115,10 +135,23 @@ function removeNavigateAppListener(){
 	Ti.App.removeEventListener('APPNAV', navigateApplication);
 }
 
-function startApplication(){
+// This is start of the application
+
+function startApplication(){	
+	containerWindowObj.open();	
 	addNavigateAppListener();
-	handleAndroidBackButton();
-	common.navHandler({TYPE:windowNames.GETTASK});
+		var firstRunCheck = openDB.isInitialized();
+	
+	if(!firstRunCheck){
+		common.navHandler({TYPE:viewNames.FIRSTRUN});
+	}else{
+		common.navHandler({TYPE:viewNames.GETTASK});
+	}
+	// instead always go through first run to decide if
+	// the parameters are already set
+	
+	//common.navHandler({TYPE:viewNames.FIRSTRUN});
+	
 }
 
 exports.startApplication = startApplication;

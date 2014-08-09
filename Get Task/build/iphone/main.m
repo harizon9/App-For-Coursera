@@ -7,11 +7,11 @@
 #define _QUOTEME(x) #x
 #define STRING(x) _QUOTEME(x)
 
-NSString * const TI_APPLICATION_DEPLOYTYPE = @"development";
+NSString * const TI_APPLICATION_DEPLOYTYPE = @"test";
 NSString * const TI_APPLICATION_ID = @"com.swc.gettask";
 NSString * const TI_APPLICATION_PUBLISHER = @"HN";
 NSString * const TI_APPLICATION_URL = @"http://";
-NSString * const TI_APPLICATION_NAME = @"Get Task";
+NSString * const TI_APPLICATION_NAME = @"T4T";
 NSString * const TI_APPLICATION_VERSION = @"1.0";
 NSString * const TI_APPLICATION_DESCRIPTION = @"Fill the gaps in your life";
 NSString * const TI_APPLICATION_COPYRIGHT = @"2014 by HN";

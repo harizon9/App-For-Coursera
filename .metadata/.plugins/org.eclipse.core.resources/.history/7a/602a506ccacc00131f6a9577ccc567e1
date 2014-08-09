@@ -1,5 +1,0 @@
-function loadMainMenu(inParam){
-	
-}
-
-exports.loadMainMenu = loadMainMenu;

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="welcome_message">Welcome</string>
+    <string name="register_task">Register task</string>
+    <string name="available_tasks">Available tasks</string>
+    <string name="get_task">Get task</string>
+    <string name="how_much_time_you_have">How much time do you have?</string>
+    <string name="button_get_tasks">Get!</string>
+    <string name="button_register_tasks">Register!</string>
+    <string name="first_run_configuration">Configure</string>
+    <string name="button_add">Add</string>
+    <string name="button_show">Show</string>
+    <string name="button_get">Get</string>
+    <string name="enter_task_desciption">Description...</string>
+    <string name="choose_category">Category:</string>
+    <string name="button_exit">Exit</string>
+    <string name="category_home">Home</string>
+    <string name="category_work">Work</string>
+    <string name="category_recreation">Recreation</string>
+    <string name="category_children">Children</string>
+    <string name="category_select">Select Category</string>
+    <string name="task_is_registered">The task is registered</string>
+    <string name="task_is_updated">Task Updated</string>
+    <string name="task_is_deleted">Task Deleted</string>
+    <string name="firstRun_Yourname">Your name?</string>
+    <string name="firstRun_yourAge">Your age?</string>
+    <string name="task_details">Task Details</string>
+    <string name="task_description">Task Description</string>
+    <string name="finished_task">Finished</string>
+    <string name="set_repeatable">Repeat task later</string>
+    <string name="statistics">Statistics</string>
+    <string name="reset_database">Reset Database</string>
+    <string name="settings">Settings</string>
+    <string name="hour_representation">h</string>
+    <string name="minute_representation">m</string>
+    <string name="all_tasks_deleted">All tasks deleted from database</string>
+    <string name="all_tasks_deleted_OK_NOTOK">CONFIRM: ALL DATA WILL BE DELETED FROM DATABASE</string>
+    <string name="statistics_1">You have created</string>
+    <string name="statistics_2">hours of productive time from your free time</string>
+    <string name="statistics_3">You have completed</string>
+    <string name="statistics_4">tasks</string>
+    <string name="done">Done</string>
+    <string name="not_done">Not done</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+</resources>

@@ -1,0 +1,40 @@
+var layout = require('ui/common/layout');
+var controlStyles = require('ui/styles/controlStyles');
+var inputTime = require('ui/controls/inputTime');
+var colorCodes = require('ui/styles/colorCodes');
+var openDB = require('db/opendb');
+var common = require('/tools/common/commonTools');
+var viewNames = require('control/viewNames');
+
+function loadStatistics(inParam){
+	
+	var newWinDisplay = Ti.UI.createView({top:0, left:0, right:0, bottom:layout.params.menu.height, backgroundColor:colorCodes.ApplicationBackgroundColor, layout:'vertical'});	
+	
+	var statistix = openDB.getStatistics();
+	
+	var newLabel = Ti.UI.createLabel({text:Ti.Locale.getString('statistics'), color:'#000', font:{fontSize:28}, top:'10%' });
+	newWinDisplay.add(newLabel);
+	
+	var lineView1 = Ti.UI.createView({top:'1%', left:0, height:'1dp', width:'100%', backgroundColor:colorCodes.HorizontalBarColor});
+	newWinDisplay.add(lineView1);
+	
+	//var textHours = statistix.totalNumberOfTasks;//'X';
+	var labelHours = Ti.UI.createLabel({text:statistix.totalNumberOfTasks, color:'#f00', top:'10%', font:{fontSize:28}});
+	newWinDisplay.add(labelHours);
+	
+	var textStatement1 = Ti.Locale.getString('statistics_1') + ' ' +  + ' ' + Ti.Locale.getString('statistics_2');
+	var labelStatement1 = Ti.UI.createLabel({text:textStatement1, color:'#000', top:'10%', width:'75%', textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER});
+	newWinDisplay.add(labelStatement1);
+	
+	var textTasks = 'X';
+	var labelTasks = Ti.UI.createLabel({text:textHours, color:'#f00', top:'10%', font:{fontSize:28}});
+	newWinDisplay.add(labelTasks);
+	
+	var textStatement2 = Ti.Locale.getString('statistics_3') + ' X '+ Ti.Locale.getString('statistics_4');
+	var labelStatement2 = Ti.UI.createLabel({text:textStatement2, color:'#000', top:'10%', width:'75%', textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER});
+	newWinDisplay.add(labelStatement2);
+		
+	return newWinDisplay;
+}
+
+exports.loadStatistics = loadStatistics;

@@ -234,7 +234,7 @@
     }
 }
 
-#pragma mark - GetTask Internal Use Only
+#pragma mark - T4T Internal Use Only
 -(void)updateKeyboardStatus
 {
     if ( ([[[TiApp app] controller] keyboardVisible]) && ([[[TiApp app] controller] keyboardFocusedProxy] == [self proxy]) ) {

@@ -39,7 +39,7 @@ typedef enum {
 } EncodingError;
 
 /**
- GetTask orientation flags.
+ T4T orientation flags.
  */
 typedef enum
 {

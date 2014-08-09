@@ -1,5 +1,0 @@
-function loadRegisterTask(inParam){
-	
-}
-
-exports.loadRegisterTask = loadRegisterTask;

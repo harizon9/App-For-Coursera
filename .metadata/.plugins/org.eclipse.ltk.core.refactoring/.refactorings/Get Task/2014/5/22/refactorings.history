@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Get Task/Resources/ui/windows/displayTaskList.js&apos; to &apos;displayTaskControl.js&apos;" description="Rename resource &apos;displayTaskList.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/ui/windows/displayTaskList.js" name="displayTaskControl.js" stamp="1401521394393" updateReferences="true"/>
+</session>

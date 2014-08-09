@@ -1,0 +1,15 @@
+function inputTimeView(inParam){
+	
+	var done = inParam.status;
+	
+	var newWinDisplay = Ti.UI.createView({layout:'horizontal', top:inParam.top, height:viewDimensions, width:viewWidth, backgroundColor:colorCodes.ApplicationBackgroundColor});	//, backgroundColor:'yellow'
+	
+	var taskDone = Ti.UI.createSwitch({value:false, top:'1%'});
+	newWinDisplay.add(taskDone);
+	
+	var labelNotDone = Ti.UI.createLabel({text:Ti.Locale.getString('nej'), backgroundColor:colorCodes.ApplicationBackgroundColor, textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER, color:'#0f0'});
+	
+	return newWinDisplay;	
+}
+
+exports.inputTimeView = inputTimeView;

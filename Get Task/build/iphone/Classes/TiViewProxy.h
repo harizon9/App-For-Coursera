@@ -17,7 +17,7 @@
  */
 @protocol TiKeyboardFocusableView
 
-#pragma mark Public GetTask APIs.
+#pragma mark Public T4T APIs.
 
 /**
  Tells the view to focus.

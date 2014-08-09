@@ -1,7 +1,0 @@
-exports.windowNames = {
-	error: 'ERROR',
-	mainMenu: 'MAIN_MENU',
-	registerTasks:'REGISTER_TASK',
-	
-	
-};

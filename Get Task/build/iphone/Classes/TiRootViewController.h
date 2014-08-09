@@ -50,7 +50,7 @@
     BOOL statusBarVisibilityChanged;
 }
 
-//GetTask Support
+//T4T Support
 -(CGRect)resizeView;
 -(void)repositionSubviews;
 -(UIView *)topWindowProxyView;

@@ -1,101 +1,141 @@
-Logger started at: Saturday, April 26, 2014 8:06:08 PM CEST
+Logger started at: Saturday, August 9, 2014 12:08:03 AM CEST
 Component: com.appcelerator.titanium.ios.core
 Version: 1.0.0.1388991145
-[6:8.973] Sent: >21*1398535568962*version<
-[6:8.973] Recv: >1398535568962*2*3.2.2.GA<
-[6:9.171] Sent: >36*1398535568963*option*monitorXHR*true<
-[6:9.171] Recv: >1398535568963<
-[6:9.172] Sent: >45*1398535568964*option*stepFiltersEnabled*false<
-[6:9.172] Recv: >1398535568964<
-[6:9.173] Sent: >45*1398535568965*option*suspendOnFirstLine*false<
-[6:9.173] Recv: >1398535568965<
-[6:9.173] Sent: >46*1398535568966*option*suspendOnExceptions*false<
-[6:9.173] Recv: >1398535568966<
-[6:9.173] Sent: >41*1398535568967*option*suspendOnErrors*true<
-[6:9.174] Recv: >1398535568967<
-[6:9.174] Sent: >43*1398535568968*option*suspendOnKeywords*true<
-[6:9.174] Recv: >1398535568968<
-[6:9.174] Sent: >45*1398535568969*option*bypassConstructors*false<
-[6:9.174] Recv: >1398535568969<
-[6:9.174] Sent: >45*1398535568970*option*stepFiltersEnabled*false<
-[6:9.175] Recv: >1398535568970<
-[6:9.175] Sent: >30*1398535568971*detailFormatters<
-[6:9.179] Recv: >1398535568971<
-[6:9.179] Sent: >68*1398535568972*breakpoint*create*app:/control/controller.js*55*1*0**1<
-[6:9.179] Recv: >1398535568972*created<
-[6:9.179] Sent: >68*1398535568973*breakpoint*create*app:/control/controller.js*78*1*0**1<
-[6:9.180] Recv: >1398535568973*created<
-[6:9.180] Sent: >20*1398535568974*enable<
-[6:9.180] Recv: >1398535568974<
-[6:9.183] Recv: >threads*created*0*kroll$1<
-[6:9.184] Recv: >log*out*[DEBUG] Analytics is enabled = YES<
-[6:9.184] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/CA91A6A2-3344-40D5-863D-140E74A51ED4/Get Task.app/app.js, Resource: app_js<
-[6:9.184] Recv: >scripts*created*284220128|app:/app.js||1|22<
-[6:9.184] Recv: >resumed*0*started<
-[6:9.184] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/CA91A6A2-3344-40D5-863D-140E74A51ED4/Get Task.app/control/controller.js, Resource: control/controller_js<
-[6:9.184] Recv: >scripts*created*284220064|app:/control/controller.js||1|102<
-[6:9.184] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/CA91A6A2-3344-40D5-863D-140E74A51ED4/Get Task.app/tools/common/commonTools.js, Resource: tools/common/commonTools_js<
-[6:9.185] Recv: >scripts*created*284220000|app:/tools/common/commonTools.js||1|21<
-[6:9.185] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/CA91A6A2-3344-40D5-863D-140E74A51ED4/Get Task.app/control/windowNames.js, Resource: control/windowNames_js<
-[6:9.185] Recv: >scripts*created*284219616|app:/control/windowNames.js||1|5<
-[6:9.186] Recv: >log*out*[DEBUG] Firing app event: APPNAV<
-[6:9.187] Recv: >log*out*[DEBUG] Application booted in 265.984952 ms<
-[6:9.248] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/CA91A6A2-3344-40D5-863D-140E74A51ED4/Get Task.app/ui/windows/mainmenu.js, Resource: ui/windows/mainmenu_js<
-[6:9.249] Recv: >scripts*created*284221344|app:/ui/windows/mainmenu.js||1|47<
-[6:9.249] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/CA91A6A2-3344-40D5-863D-140E74A51ED4/Get Task.app/styles/colorCodes.js, Resource: styles/colorCodes_js<
-[6:9.249] Recv: >scripts*created*284221024|app:/styles/colorCodes.js||1|9<
-[6:9.250] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/CA91A6A2-3344-40D5-863D-140E74A51ED4/Get Task.app/_app_props_.json, Resource: _app_props__json<
-[6:10.138] Recv: >log*out*[DEBUG] Firing app event: APPNAV<
-[6:10.138] Recv: >suspended*0*breakpoint*app:/control/controller.js*78<
-[6:10.138] Sent: >22*1398535568975*frames*0<
-[6:10.139] Recv: >1398535568975*0|navigateApplication|inParam|app:/control/controller.js|78|false|0|0<
-[6:10.709] Sent: >34*1398535568976*variables*0*frame[0]<
-[6:10.710] Recv: >1398535568976*arguments|object|opnl|[object Arguments]*inParam|object|ol|[object Object]*windowHandler|object|l|[object Function]*windowNames|object|ol|[object Object]*loadErrorW|object|l|[object Function]*navigateApplication|object|l|[object Function]*common|object|ol|[object Object]*loadGetTaskW|object|l|[object Function]*prevWin|null|wl|<null>*removeNavigateAppListener|object|l|[object Function]*processBackButton|object|l|[object Function]*startApplication|object|l|[object Function]*loadMainMenuW|object|l|[object Function]*__OXP|object|ol|[object Object]*loadRegisterTaskW|object|l|[object Function]*openWin|object|nol|[object TiUIWindow]*backArray|object|wnol|[object Array]*module|object|ol|[object Object]*loadAvailableTasksW|object|l|[object Function]*exports|object|ol|[object Object]*addNavigateAppListener|object|l|[object Function]*control|object|ov|[object Object]*console|object|nov|[object TiConsole]<
-[6:15.473] Sent: >11**stepOver*0<
-[6:15.474] Recv: >resumed*0*stepOver<
-[6:15.474] Recv: >suspended*0*breakpoint*app:/control/controller.js*55<
-[6:15.475] Sent: >22*1398535568977*frames*0<
-[6:15.475] Recv: >1398535568977*0|loadGetTaskW|inParam|app:/control/controller.js|55|false|0|0*1|navigateApplication|inParam|app:/control/controller.js|78|false|0|0<
-[6:15.700] Sent: >34*1398535568978*variables*0*frame[0]<
-[6:15.701] Recv: >1398535568978*loadGetTaskWindow|undefined|wl|undefined*arguments|object|opnl|[object Arguments]*inParam|object|ol|[object Object]*loadGetTaskObject|undefined|wl|undefined*windowHandler|object|l|[object Function]*windowNames|object|ol|[object Object]*loadErrorW|object|l|[object Function]*navigateApplication|object|l|[object Function]*common|object|ol|[object Object]*loadGetTaskW|object|l|[object Function]*prevWin|null|wl|<null>*removeNavigateAppListener|object|l|[object Function]*processBackButton|object|l|[object Function]*startApplication|object|l|[object Function]*loadMainMenuW|object|l|[object Function]*__OXP|object|ol|[object Object]*loadRegisterTaskW|object|l|[object Function]*openWin|object|nol|[object TiUIWindow]*backArray|object|wnol|[object Array]*module|object|ol|[object Object]*loadAvailableTasksW|object|l|[object Function]*exports|object|ol|[object Object]*addNavigateAppListener|object|l|[object Function]*control|object|ov|[object Object]*console|object|nov|[object TiConsole]<
-[6:16.890] Sent: >11**stepOver*0<
-[6:16.891] Recv: >resumed*0*stepOver<
-[6:16.891] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/CA91A6A2-3344-40D5-863D-140E74A51ED4/Get Task.app/ui/windows/getTask.js, Resource: ui/windows/getTask_js<
-[6:16.892] Recv: >scripts*created*284500448|app:/ui/windows/getTask.js||1|22<
-[6:16.892] Recv: >suspended*0*breakpoint*app:/control/controller.js*56<
-[6:16.892] Sent: >22*1398535568979*frames*0<
-[6:16.893] Recv: >1398535568979*0|loadGetTaskW|inParam|app:/control/controller.js|56|false|0|0*1|navigateApplication|inParam|app:/control/controller.js|78|false|0|0<
-[6:17.143] Sent: >34*1398535568980*variables*0*frame[0]<
-[6:17.144] Recv: >1398535568980*loadGetTaskWindow|undefined|wl|undefined*arguments|object|opnl|[object Arguments]*inParam|object|ol|[object Object]*loadGetTaskObject|object|ol|[object Object]*windowHandler|object|l|[object Function]*windowNames|object|ol|[object Object]*loadErrorW|object|l|[object Function]*navigateApplication|object|l|[object Function]*common|object|ol|[object Object]*loadGetTaskW|object|l|[object Function]*prevWin|null|wl|<null>*removeNavigateAppListener|object|l|[object Function]*processBackButton|object|l|[object Function]*startApplication|object|l|[object Function]*loadMainMenuW|object|l|[object Function]*__OXP|object|ol|[object Object]*loadRegisterTaskW|object|l|[object Function]*openWin|object|nol|[object TiUIWindow]*backArray|object|wnol|[object Array]*module|object|ol|[object Object]*loadAvailableTasksW|object|l|[object Function]*exports|object|ol|[object Object]*addNavigateAppListener|object|l|[object Function]*control|object|ov|[object Object]*console|object|nov|[object TiConsole]<
-[6:17.578] Sent: >11**stepOver*0<
-[6:17.578] Recv: >resumed*0*stepOver<
-[6:17.579] Recv: >suspended*0*breakpoint*app:/control/controller.js*57<
-[6:17.579] Sent: >22*1398535568981*frames*0<
-[6:17.580] Recv: >1398535568981*0|loadGetTaskW|inParam|app:/control/controller.js|57|false|0|0*1|navigateApplication|inParam|app:/control/controller.js|78|false|0|0<
-[6:17.771] Sent: >34*1398535568982*variables*0*frame[0]<
-[6:17.771] Recv: >1398535568982*loadGetTaskWindow|object|nol|[object TiUIWindow]*arguments|object|opnl|[object Arguments]*inParam|object|ol|[object Object]*loadGetTaskObject|object|ol|[object Object]*windowHandler|object|l|[object Function]*windowNames|object|ol|[object Object]*loadErrorW|object|l|[object Function]*navigateApplication|object|l|[object Function]*common|object|ol|[object Object]*loadGetTaskW|object|l|[object Function]*prevWin|null|wl|<null>*removeNavigateAppListener|object|l|[object Function]*processBackButton|object|l|[object Function]*startApplication|object|l|[object Function]*loadMainMenuW|object|l|[object Function]*__OXP|object|ol|[object Object]*loadRegisterTaskW|object|l|[object Function]*openWin|object|nol|[object TiUIWindow]*backArray|object|wnol|[object Array]*module|object|ol|[object Object]*loadAvailableTasksW|object|l|[object Function]*exports|object|ol|[object Object]*addNavigateAppListener|object|l|[object Function]*control|object|ov|[object Object]*console|object|nov|[object TiConsole]<
-[6:18.307] Sent: >11**stepOver*0<
-[6:18.307] Recv: >resumed*0*stepOver<
-[6:18.310] Recv: >suspended*0*breakpoint*app:/control/controller.js*79<
-[6:18.310] Sent: >22*1398535568983*frames*0<
-[6:18.312] Recv: >1398535568983*0|navigateApplication|inParam|app:/control/controller.js|79|false|0|0<
-[6:18.596] Sent: >34*1398535568984*variables*0*frame[0]<
-[6:18.597] Recv: >1398535568984*arguments|object|opnl|[object Arguments]*inParam|object|ol|[object Object]*windowHandler|object|l|[object Function]*windowNames|object|ol|[object Object]*loadErrorW|object|l|[object Function]*navigateApplication|object|l|[object Function]*common|object|ol|[object Object]*loadGetTaskW|object|l|[object Function]*prevWin|null|wl|<null>*removeNavigateAppListener|object|l|[object Function]*processBackButton|object|l|[object Function]*startApplication|object|l|[object Function]*loadMainMenuW|object|l|[object Function]*__OXP|object|ol|[object Object]*loadRegisterTaskW|object|l|[object Function]*openWin|object|nol|[object TiUIWindow]*backArray|object|wnol|[object Array]*module|object|ol|[object Object]*loadAvailableTasksW|object|l|[object Function]*exports|object|ol|[object Object]*addNavigateAppListener|object|l|[object Function]*control|object|ov|[object Object]*console|object|nov|[object TiConsole]<
-[6:26.2] Sent: >11**stepOver*0<
-[6:26.3] Recv: >resumed*0*stepOver<
-[6:26.3] Recv: >suspended*0*breakpoint*app:/ui/windows/mainmenu.js*30<
-[6:26.3] Sent: >22*1398535568985*frames*0<
-[6:26.4] Recv: >1398535568985*0||e|app:/ui/windows/mainmenu.js|30|false|0|0<
-[6:26.293] Sent: >34*1398535568986*variables*0*frame[0]<
-[6:26.294] Recv: >1398535568986*this|object|no|[object TiUIWindow]*e|object|ol|[object Object]*arguments|object|opnl|[object Arguments]*newLabel|object|nol|[object TiUILabel]*launchAvailableTasksButton|object|nol|[object TiUIButton]*inParam|undefined|wl|undefined*newWin|object|nol|[object TiUIWindow]*newWinDisplay|object|nol|[object TiUIView]*launchRegisterTaskButton|object|nol|[object TiUIButton]*launchGetTaskButton|object|nol|[object TiUIButton]*__OXP|object|ol|[object Object]*windowNames|object|ol|[object Object]*loadMainMenu|object|l|[object Function]*colorCodes|object|ol|[object Object]*common|object|ol|[object Object]*module|object|ol|[object Object]*exports|object|ol|[object Object]*control|object|ov|[object Object]*console|object|nov|[object TiConsole]<
-[6:27.330] Sent: >11**stepOver*0<
-[6:27.331] Recv: >resumed*0*stepOver<
-[6:27.331] Recv: >suspended*0*breakpoint*app:/ui/windows/mainmenu.js*30<
-[6:27.332] Sent: >22*1398535568987*frames*0<
-[6:27.332] Recv: >1398535568987*0||e|app:/ui/windows/mainmenu.js|30|false|0|0<
-[6:27.487] Sent: >34*1398535568988*variables*0*frame[0]<
-[6:27.487] Recv: >1398535568988*this|object|no|[object TiUIWindow]*e|object|ol|[object Object]*arguments|object|opnl|[object Arguments]*newLabel|object|nol|[object TiUILabel]*launchAvailableTasksButton|object|nol|[object TiUIButton]*inParam|undefined|wl|undefined*newWin|object|nol|[object TiUIWindow]*newWinDisplay|object|nol|[object TiUIView]*launchRegisterTaskButton|object|nol|[object TiUIButton]*launchGetTaskButton|object|nol|[object TiUIButton]*__OXP|object|ol|[object Object]*windowNames|object|ol|[object Object]*loadMainMenu|object|l|[object Function]*colorCodes|object|ol|[object Object]*common|object|ol|[object Object]*module|object|ol|[object Object]*exports|object|ol|[object Object]*control|object|ov|[object Object]*console|object|nov|[object TiConsole]<
-[6:28.342] Sent: >11**stepOver*0<
-[6:28.343] Recv: >resumed*0*stepOver<
-[53:13.275] Sent: >68*1398535568989*breakpoint*change*app:/control/controller.js*66*1*0**1<
+[8:3.857] Sent: >21*1407535683858*version<
+[8:3.858] Recv: >1407535683858*2*3.2.2.GA<
+[8:3.997] Sent: >36*1407535683859*option*monitorXHR*true<
+[8:3.997] Recv: >1407535683859<
+[8:3.997] Sent: >45*1407535683860*option*stepFiltersEnabled*false<
+[8:3.998] Recv: >1407535683860<
+[8:3.998] Sent: >45*1407535683861*option*suspendOnFirstLine*false<
+[8:3.998] Recv: >1407535683861<
+[8:3.998] Sent: >46*1407535683862*option*suspendOnExceptions*false<
+[8:3.999] Recv: >1407535683862<
+[8:3.999] Sent: >41*1407535683863*option*suspendOnErrors*true<
+[8:3.999] Recv: >1407535683863<
+[8:3.999] Sent: >43*1407535683864*option*suspendOnKeywords*true<
+[8:4.0] Recv: >1407535683864<
+[8:4.0] Sent: >45*1407535683865*option*bypassConstructors*false<
+[8:4.0] Recv: >1407535683865<
+[8:4.4] Sent: >45*1407535683866*option*stepFiltersEnabled*false<
+[8:4.4] Recv: >1407535683866<
+[8:4.4] Sent: >30*1407535683867*detailFormatters<
+[8:4.5] Recv: >1407535683867<
+[8:4.5] Sent: >73*1407535683868*breakpoint*create*app:/ui/windows/registerTask.js*41*1*0**1<
+[8:4.5] Recv: >1407535683868*created<
+[8:4.5] Sent: >73*1407535683869*breakpoint*create*app:/ui/styles/controlStyles.js*30*0*0**1<
+[8:4.6] Recv: >1407535683869*created<
+[8:4.6] Sent: >60*1407535683870*breakpoint*create*app:/db/opendb.js*172*1*0**1<
+[8:4.7] Recv: >1407535683870*created<
+[8:4.7] Sent: >69*1407535683871*breakpoint*create*app:/control/controller.js*100*0*0**1<
+[8:4.8] Recv: >1407535683871*created<
+[8:4.8] Sent: >69*1407535683872*breakpoint*create*app:/ui/windows/theTask.js*161*1*0**1<
+[8:4.8] Recv: >1407535683872*created<
+[8:4.8] Sent: >59*1407535683873*breakpoint*create*app:/db/opendb.js*93*1*0**1<
+[8:4.8] Recv: >1407535683873*created<
+[8:4.9] Sent: >60*1407535683874*breakpoint*create*app:/db/opendb.js*120*1*0**1<
+[8:4.9] Recv: >1407535683874*created<
+[8:4.9] Sent: >69*1407535683875*breakpoint*create*app:/ui/windows/theTask.js*180*1*0**1<
+[8:4.9] Recv: >1407535683875*created<
+[8:4.10] Sent: >69*1407535683876*breakpoint*create*app:/ui/windows/theTask.js*151*1*0**1<
+[8:4.10] Recv: >1407535683876*created<
+[8:4.10] Sent: >69*1407535683877*breakpoint*create*app:/ui/windows/theTask.js*136*1*0**1<
+[8:4.10] Recv: >1407535683877*created<
+[8:4.11] Sent: >60*1407535683878*breakpoint*create*app:/db/opendb.js*172*1*0**1<
+[8:4.11] Recv: >1407535683878*created<
+[8:4.11] Sent: >60*1407535683879*breakpoint*create*app:/db/opendb.js*165*1*0**1<
+[8:4.11] Recv: >1407535683879*created<
+[8:4.11] Sent: >20*1407535683880*enable<
+[8:4.12] Recv: >1407535683880<
+[8:4.13] Recv: >threads*created*0*kroll$1<
+[8:4.15] Recv: >log*out*[DEBUG] Analytics is enabled = YES<
+[8:4.17] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/app.js, Resource: app_js<
+[8:4.18] Recv: >scripts*created*300817120|app:/app.js||1|23<
+[8:4.18] Recv: >resumed*0*started<
+[8:4.18] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/control/controller.js, Resource: control/controller_js<
+[8:4.18] Recv: >scripts*created*300817056|app:/control/controller.js||1|158<
+[8:4.18] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/tools/common/commonTools.js, Resource: tools/common/commonTools_js<
+[8:4.18] Recv: >scripts*created*300816960|app:/tools/common/commonTools.js||1|21<
+[8:4.18] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/control/viewNames.js, Resource: control/viewNames_js<
+[8:4.18] Recv: >scripts*created*300816608|app:/control/viewNames.js||1|11<
+[8:4.19] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/windows/containerWindow.js, Resource: ui/windows/containerWindow_js<
+[8:4.19] Recv: >scripts*created*300816576|app:/ui/windows/containerWindow.js||1|11<
+[8:4.19] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/iphone/menu.js, Resource: ui/iphone/menu_js<
+[8:4.20] Recv: >scripts*created*300818176|app:/ui/iphone/menu.js||1|54<
+[8:4.20] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/common/layout.js, Resource: ui/common/layout_js<
+[8:4.20] Recv: >scripts*created*300817824|app:/ui/common/layout.js||1|6<
+[8:4.20] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/styles/colorCodes.js, Resource: ui/styles/colorCodes_js<
+[8:4.20] Recv: >scripts*created*300817760|app:/ui/styles/colorCodes.js||1|29<
+[8:4.21] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/_app_props_.json, Resource: _app_props__json<
+[8:4.81] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/db/opendb.js, Resource: db/opendb_js<
+[8:4.81] Recv: >scripts*created*300818240|app:/db/opendb.js||1|193<
+[8:4.96] Recv: >log*out*[INFO] 1105<
+[8:4.96] Recv: >log*out*[DEBUG] Firing app event: APPNAV<
+[8:4.96] Recv: >log*out*[DEBUG] Application booted in 252.864003 ms<
+[8:4.111] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/windows/getTask.js, Resource: ui/windows/getTask_js<
+[8:4.111] Recv: >scripts*created*301129824|app:/ui/windows/getTask.js||1|50<
+[8:4.112] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/styles/controlStyles.js, Resource: ui/styles/controlStyles_js<
+[8:4.112] Recv: >scripts*created*301131744|app:/ui/styles/controlStyles.js||1|62<
+[8:4.112] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/controls/inputTime.js, Resource: ui/controls/inputTime_js<
+[8:4.112] Recv: >scripts*created*301129728|app:/ui/controls/inputTime.js||1|67<
+[8:4.112] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/controls/displayTask.js, Resource: ui/controls/displayTask_js<
+[8:4.112] Recv: >scripts*created*301131616|app:/ui/controls/displayTask.js||1|56<
+[8:4.112] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/controls/taskOnTableView.js, Resource: ui/controls/taskOnTableView_js<
+[8:4.112] Recv: >scripts*created*301129760|app:/ui/controls/taskOnTableView.js||1|46<
+[8:11.827] Recv: >log*out*[DEBUG] Firing app event: APPNAV<
+[8:11.827] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/windows/theTask.js, Resource: ui/windows/theTask_js<
+[8:11.828] Recv: >scripts*created*301133504|app:/ui/windows/theTask.js||1|190<
+[8:11.829] Recv: >log*out*[WARN] Invalid dimension value (nan) requested. Making the dimension undefined instead.<
+[8:11.830] Recv: >log*out*[WARN] Invalid dimension value (nan) requested. Making the dimension undefined instead.<
+[8:11.831] Recv: >log*out*[WARN] Called remove for [object TiUILabel] on [object TiUIView], but [object TiUILabel] isn't a child or has already been removed.<
+[8:11.831] Recv: >log*out*[WARN] Invalid dimension value (nan) requested. Making the dimension undefined instead.<
+[8:11.831] Recv: >suspended*0*breakpoint*app:/ui/windows/theTask.js*136<
+[8:11.832] Sent: >22*1407535683881*frames*0<
+[8:11.832] Recv: >1407535683881*0|repeatYesNo||app:/ui/windows/theTask.js|136|false|0|0*1||inParam|app:/ui/windows/theTask.js|148|false|0|0*2|loadShowTaskW|inParam|app:/control/controller.js|65|false|0|0*3|navigateApplication|inParam|app:/control/controller.js|109|false|0|0<
+[8:12.295] Sent: >34*1407535683882*variables*0*frame[0]<
+[8:12.296] Recv: >1407535683882*arguments|object|opnl|[object Arguments]*taskInformationText|object|nol|[object TiUITextField]*timeView|object|nol|[object TiUIView]*notDone|object|nol|[object TiUILabel]*doneNotDoneView|object|nol|[object TiUIView]*textBoxDimensions|number|wl|32*repeatYesNo|object|l|[object Function]*taskDone|object|nol|[object TiUISwitch]*taskHeading|object|nol|[object TiUILabel]*textboxWidth|number|wl|38*colorLabel|object|nol|[object TiUILabel]*inParam|object|ol|[object Object]*taskRepeatable|string|wl|"0"*repeatSwitch|object|nol|[object TiUISwitch]*hours|number|wl|0*taskLabel|object|nol|[object TiUILabel]*doneYesNo|object|l|[object Function]*newhourText|object|nol|[object TiUITextField]*taskTimeLabel|object|nol|[object TiUILabel]*repeat|object|nol|[object TiUILabel]*taskID|string|wl|"6"*minutes|number|wl|25*finishedLabel|object|nol|[object TiUILabel]*lineView1|object|nol|[object TiUIView]*minutesString|number|wl|25*labelFinished|string|wl|"Finished?"*done|object|nol|[object TiUILabel]*labelRepeat|string|wl|"...842<
+[8:17.924] Sent: >9**resume*0<
+[8:17.925] Recv: >resumed*0*resume<
+[8:17.926] Recv: >log*out*[WARN] Called remove for [object TiUILabel] on [object TiUIView], but [object TiUILabel] isn't a child or has already been removed.<
+[8:33.138] Recv: >suspended*0*breakpoint*app:/ui/windows/theTask.js*180<
+[8:33.138] Sent: >22*1407535683883*frames*0<
+[8:33.139] Recv: >1407535683883*0||e|app:/ui/windows/theTask.js|180|false|0|0<
+[8:33.384] Sent: >34*1407535683884*variables*0*frame[0]<
+[8:33.385] Recv: >1407535683884*this|object|no|[object TiUIButton]*e|object|ol|[object Object]*taskDoneInt|number|wl|1*taskTimeNewValue|number|wl|25*arguments|object|opnl|[object Arguments]*hours|number|wl|0*repeatableInt|number|wl|0*minutes|number|wl|25*taskInformationText|object|nol|[object TiUITextField]*timeView|object|nol|[object TiUIView]*notDone|object|nol|[object TiUILabel]*doneNotDoneView|object|nol|[object TiUIView]*textBoxDimensions|number|wl|32*repeatYesNo|object|l|[object Function]*taskDone|object|nol|[object TiUISwitch]*taskHeading|object|nol|[object TiUILabel]*textboxWidth|number|wl|38*colorLabel|object|nol|[object TiUILabel]*inParam|object|ol|[object Object]*taskRepeatable|string|wl|"0"*repeatSwitch|object|nol|[object TiUISwitch]*taskLabel|object|nol|[object TiUILabel]*doneYesNo|object|l|[object Function]*newhourText|object|nol|[object TiUITextField]*taskTimeLabel|object|nol|[object TiUILabel]*repeat|object|nol|[object TiUILabel]*taskID|string|wl|"6"*finishedLabel|object|nol|[object TiUILabel]*lineView1|object|...1016<
+[8:35.842] Sent: >9**resume*0<
+[8:35.842] Recv: >resumed*0*resume<
+[8:35.843] Recv: >suspended*0*breakpoint*app:/db/opendb.js*93<
+[8:35.844] Sent: >22*1407535683885*frames*0<
+[8:35.845] Recv: >1407535683885*0|updateAchievement|inParam|app:/db/opendb.js|93|false|0|0*1||e|app:/ui/windows/theTask.js|181|false|0|0<
+[8:36.114] Sent: >34*1407535683886*variables*0*frame[0]<
+[8:36.115] Recv: >1407535683886*this|object|o|[object Object]*query|undefined|wl|undefined*cc|number|wl|1*noOfTasks|undefined|wl|undefined*cc2|number|wl|1*queryGetTasksNo|string|wl|"SELECT #2 FROM APPPROPS WHERE PROPNAME = 'finishedtasks';"*dbFieldProductiveTime|string|wl|"productivetime"*timeForTasks|undefined|wl|undefined*arguments|object|opnl|[object Arguments]*dbFieldFinishedTasks|string|wl|"finishedtasks"*newtime|number|wl|25*inParam|object|ol|[object Object]*queryGetTasksTime|string|wl|"SELECT #2 FROM APPPROPS WHERE PROPNAME = 'productivetime';"*__OXP|object|ol|[object Object]*isInitialized|object|l|[object Function]*module|object|ol|[object Object]*updateAchievement|object|l|[object Function]*path|undefined|wl|undefined*getTasksByTime|object|l|[object Function]*conn|object|nol|[object TiDatabase]*deleteTask|object|l|[object Function]*runQuery|object|l|[object Function]*updateTask|object|l|[object Function]*deleteAllTasks|object|l|[object Function]*addTask|object|l|[object Function]*dbObject|object|nol|[object TiDatabase...391<
+[8:36.627] Sent: >45*1407535683887*details*0*frame[0].timeForTasks<
+[8:36.627] Recv: >1407535683887<
+[8:36.688] Sent: >45*1407535683888*details*0*frame[0].timeForTasks<
+[8:36.689] Recv: >1407535683888<
+[8:36.741] Sent: >9**resume*0<
+[8:36.742] Recv: >resumed*0*resume<
+[8:36.742] Recv: >suspended*0*breakpoint*app:/db/opendb.js*93<
+[8:36.742] Sent: >22*1407535683889*frames*0<
+[8:36.743] Recv: >1407535683889*0|updateAchievement|inParam|app:/db/opendb.js|93|false|0|0*1||e|app:/ui/windows/theTask.js|181|false|0|0<
+[8:36.938] Sent: >34*1407535683890*variables*0*frame[0]<
+[8:36.941] Recv: >1407535683890*this|object|o|[object Object]*query|undefined|wl|undefined*cc|number|wl|1*noOfTasks|number|wl|3*cc2|number|wl|1*queryGetTasksNo|string|wl|"SELECT #2 FROM APPPROPS WHERE PROPNAME = 'finishedtasks';"*dbFieldProductiveTime|string|wl|"productivetime"*timeForTasks|undefined|wl|undefined*arguments|object|opnl|[object Arguments]*dbFieldFinishedTasks|string|wl|"finishedtasks"*newtime|number|wl|25*inParam|object|ol|[object Object]*queryGetTasksTime|string|wl|"SELECT #2 FROM APPPROPS WHERE PROPNAME = 'productivetime';"*__OXP|object|ol|[object Object]*isInitialized|object|l|[object Function]*module|object|ol|[object Object]*updateAchievement|object|l|[object Function]*path|undefined|wl|undefined*getTasksByTime|object|l|[object Function]*conn|object|nol|[object TiDatabase]*deleteTask|object|l|[object Function]*runQuery|object|l|[object Function]*updateTask|object|l|[object Function]*deleteAllTasks|object|l|[object Function]*addTask|object|l|[object Function]*dbObject|object|nol|[object TiDatabaseResultSet]*...380<
+[8:37.289] Sent: >45*1407535683891*details*0*frame[0].timeForTasks<
+[8:37.290] Recv: >1407535683891<
+[8:37.472] Sent: >45*1407535683892*details*0*frame[0].timeForTasks<
+[8:37.472] Recv: >1407535683892<
+[8:37.504] Sent: >9**resume*0<
+[8:37.504] Recv: >resumed*0*resume<
+[8:37.530] Recv: >log*out*[DEBUG] Firing app event: APPNAV<
+[8:42.283] Recv: >log*out*[DEBUG] Firing app event: APPNAV<
+[8:42.283] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/windows/settings.js, Resource: ui/windows/settings_js<
+[8:42.283] Recv: >scripts*created*301443008|app:/ui/windows/settings.js||1|60<
+[8:43.936] Recv: >log*out*[DEBUG] Firing app event: APPNAV<
+[8:43.936] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/windows/statistics.js, Resource: ui/windows/statistics_js<
+[8:43.937] Recv: >scripts*created*301442368|app:/ui/windows/statistics.js||1|51<
+[8:49.179] Recv: >log*out*[DEBUG] Firing app event: APPNAV<
+[8:49.179] Recv: >log*out*[DEBUG] Loading: /Users/HN/Library/Application Support/iPhone Simulator/7.1/Applications/FDFBC901-F184-4F7E-9050-EC9A80029113/T4T.app/ui/windows/registerTask.js, Resource: ui/windows/registerTask_js<
+[8:49.179] Recv: >scripts*created*301441056|app:/ui/windows/registerTask.js||1|57<
+[8:51.249] Recv: >log*out*[DEBUG] Firing app event: APPNAV<
+[9:0.241] Sent: >10**terminate<
 ----------End of file----------
